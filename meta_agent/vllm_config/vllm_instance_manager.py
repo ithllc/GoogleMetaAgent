@@ -1,4 +1,5 @@
 import os
+from .vllm_configuration import VLLM_CONFIG
 
 class VLLMInstanceManager:
     """
@@ -6,6 +7,7 @@ class VLLMInstanceManager:
     """
     def __init__(self, model_name: str = "gemma-3"):
         self.model_name = model_name
+        self.config = VLLM_CONFIG
 
     def detect_gpus(self):
         """
@@ -23,4 +25,4 @@ class VLLMInstanceManager:
         # This is a placeholder for the actual implementation.
         # In a real implementation, you would use the vllm library to
         # configure and launch the server.
-        print("Configuring and launching VLLM server...")
+        print(f"Configuring and launching VLLM server with config: {self.config}")
