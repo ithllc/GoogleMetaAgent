@@ -58,7 +58,7 @@ cd GoogleMetaAgent
 # Set up Google Cloud
 export GOOGLE_CLOUD_PROJECT="your-project-id"
 gcloud config set project $GOOGLE_CLOUD_PROJECT
-gcloud config set run/region us-central1
+gcloud config set run/region europe-west1
 
 # Enable required APIs
 gcloud services enable run.googleapis.com cloudbuild.googleapis.com aiplatform.googleapis.com

@@ -46,7 +46,7 @@ app = FastAPI(
 
 # Initialize Meta Agent
 PROJECT_ID = os.environ.get("GOOGLE_CLOUD_PROJECT")
-REGION = os.environ.get("GOOGLE_CLOUD_LOCATION", "us-central1")
+REGION = os.environ.get("GOOGLE_CLOUD_LOCATION", "europe-west1")
 
 if not PROJECT_ID:
     logger.error("GOOGLE_CLOUD_PROJECT environment variable not set")
