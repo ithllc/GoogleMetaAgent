@@ -17,7 +17,7 @@ kind: Service
 metadata:
   name: google-meta-agent
   labels:
-    cloud.googleapis.com/location: us-central1
+    cloud.googleapis.com/location: europe-west1
     dev-tutorial: hackathon-nyc-cloud-run-gpu-25
   annotations:
     run.googleapis.com/ingress: all
