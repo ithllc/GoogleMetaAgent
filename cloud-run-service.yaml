@@ -56,7 +56,7 @@ spec:
         - name: GOOGLE_CLOUD_PROJECT
           value: PROJECT_ID
         - name: GOOGLE_CLOUD_LOCATION
-          value: us-central1
+          value: europe-west1
         - name: CUDA_VISIBLE_DEVICES
           value: "0"
         - name: NVIDIA_VISIBLE_DEVICES
@@ -115,7 +115,7 @@ metadata:
 data:
   # Deployment configuration
   project_id: "PROJECT_ID"
-  region: "us-central1"
+  region: "europe-west1"
   service_name: "google-meta-agent"
   image_name: "gcr.io/PROJECT_ID/google-meta-agent:latest"
   
@@ -123,7 +123,7 @@ data:
   deploy_command: |
     gcloud run deploy google-meta-agent \
       --image gcr.io/PROJECT_ID/google-meta-agent:latest \
-      --region us-central1 \
+      --region europe-west1 \
       --platform managed \
       --allow-unauthenticated \
       --memory 32Gi \
