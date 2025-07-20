@@ -37,7 +37,7 @@ def main():
     project_id = os.environ.get("GOOGLE_CLOUD_PROJECT")
     gcs_source = f"gs://{project_id}-meta-agent-source"
     image_name = f"gcr.io/{project_id}/{agent_blueprint.agent_name}"
-    location = "us-central1"
+    location = "europe-west1"
 
     # In a real implementation, you would upload the source to GCS
     # For now, we'll just print the commands
