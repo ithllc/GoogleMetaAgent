@@ -2,16 +2,16 @@
 
 **Automated Design of Agentic Systems (ADAS) for Google Cloud Run with GPUs**
 
-The Google Meta Agent is an innovative implementation of the Automated Design of Agentic Systems (ADAS) concept, where a meta agent automatically generates, builds, and deploys other AI agents based on natural language descriptions. This project demonstrates the future of AI development by moving from hand-crafting agents to defining high-level goals and letting autonomous systems handle the implementation.
+The Google Meta Agent is an innovative proof-of-concept implementation of the Automated Design of Agentic Systems (ADAS) concept, where a meta agent automatically generates, builds, and deploys other AI agents based on natural language descriptions. This project demonstrates the future of AI development by moving from hand-crafting agents to defining high-level goals and letting autonomous systems handle the implementation.
 
 ## 🌟 Overview
 
-This project implements the concepts from the "Automated Design of Agentic Systems" research, leveraging:
+This proof-of-concept project implements the concepts from the "Automated Design of Agentic Systems" research, leveraging:
 
 - **Google ADK (Agent Development Kit)** for robust agent framework
 - **DSPy** for structured language model programming
 - **Google Cloud Run with GPU support** for scalable deployment
-- **VLLM** for efficient model inference
+- **vLLM** for efficient model inference
 - **Opik by Comet** for monitoring and observability
 
 ## 🏗️ Architecture
@@ -29,8 +29,8 @@ Natural Language Description → Agent Blueprint → Code Generation → Contain
    - Generates agent code with proper ADK integration
    - Supports multiple tool types (Google Search, Code Executor, etc.)
 
-2. **VLLM Configuration Module** (`meta_agent/vllm_config/`)
-   - Manages VLLM instances for local model inference
+2. **vLLM Configuration Module** (`meta_agent/vllm_config/`)
+   - Manages vLLM instances for local model inference
    - GPU detection and optimization
    - Load balancing for multiple model instances
 
@@ -187,7 +187,7 @@ python -m pytest tests/test_agent_generation.py
 python -m pytest tests/test_integration.py
 ```
 
-## 🎯 Examples
+## 🎯 Examples of Agents to Generate
 
 ### Create a Research Assistant
 

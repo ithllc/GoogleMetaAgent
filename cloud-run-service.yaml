@@ -42,6 +42,7 @@ spec:
     spec:
       containerConcurrency: 1
       timeoutSeconds: 3600
+      # Service account for Cloud Run with GPU support
       serviceAccountName: PROJECT_NUMBER-compute@developer.gserviceaccount.com
       containers:
       - name: meta-agent-container
