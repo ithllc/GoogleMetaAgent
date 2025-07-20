@@ -48,11 +48,11 @@ Natural Language Description → Agent Blueprint → Code Generation → Contain
 - Google Cloud SDK (gcloud) installed
 - Python 3.11+ with pip
 
-### 1. Setup Environment
+### 1. Setup Environment Using Google Cloud Shell
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/ithllc/GoogleMetaAgent.git
 cd GoogleMetaAgent
 
 # Set up Google Cloud
@@ -230,6 +230,7 @@ curl -X POST "https://your-meta-agent-url/create-agent" \
 - [Google ADK Documentation](https://google.github.io/adk-docs/)
 - [Cloud Run GPU Documentation](https://cloud.google.com/run/docs/configuring/gpu)
 - [VLLM Documentation](https://vllm.readthedocs.io/)
+- [DSPy Documentation](https://dspy.ai/)
 
 ## 📄 License
 
